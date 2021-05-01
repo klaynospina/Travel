@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<!--You know you could be getting paid to poke around in our code?
+We're hiring designers and developers to work in Amsterdam:
+https://careers.booking.com/-->
+<!-- wdot-802 -->
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Copse&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cvlsyndgstdbcsnsxbsxcbsdgycsdcvtysdcvyt.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2? family = Cairo: wght @ 900 & display = swap" rel="hoja de estilo">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/images.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2? family = Scada & display = swap" rel="hoja de estilo ">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2? family = Lato & display = swap" rel="hoja de estilo ">
+    <link rel="alternate" href="file:///C:/proyectosena2021/travel.html#" type="application/rss+xml" title="RSS">
+    <script src="https://kit.fontawesome.com/2a174a6d4c.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="javascriptsena/animacion-menu.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description-pagin-web" content="file:///C:/proyectosena2021/travel.html#">
+    <meta name="creador de la pagina" content="por juan daniel ospina">
+    <meta name="keywords" content="pagina de hoteles donde encuentras los mejores servicos">
+    <meta name="description" content="www.Travel.com">
+    <meta name="description" content="estilos/css">
+    <meta name="description" content="javascript/JSO">
+    <meta name="description" content="Index.html-css-javascript-php-msql-jquery--libralis-css/greed">
+    <meta http-equiv="" content="3">
+    <meta http-equiv="es, en" content="Travel.com">
+    <meta name="description" content="galery-imagenes">
+    <meta http-equiv="content-type" content="text/html">
+    <meta name="keywords" content="content -reservaciones de hoteles">
+    <meta name="keywords" content="contactar a _+513345105165">
+    <meta name="keywords" content="gmail-ospinaortizjuandaniel351@gmail.com">
+    <meta name="redes-sociales" content="facebook-twitter-instagram-tiktik-">
+
+    <meta name="date" content="20/april/2021">
+    <meta http-equiv="cache-control" content="no-cachet">
+    <meta http-equiv="expires" content="886400">
+    <meta http-equiv="expires" content="Fri, 30 feb 2021 00:00:000 GMT">
+    <TItle>TravelH.Com</TItle>
+
+
+
+
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#252e39"
+                },
+                "button": {
+                    "background": "transparent",
+                    "text": "#14a7d0",
+                    "border": "#14a7d0"
+                }
+            },
+            "position": "bottom-right",
+            "content": {
+                "dismiss": "Aceptar",
+                "link": "Leer mas",
+                "href": "http://blog.trevenque.es/web/recomendaciones-politica-de-cookies/"
+            }
+        });
+    </script>
+
+    <script>
+        $(document).ready(main);
+
+        var contador = 1;
+
+        function main() {
+            $('.menu_bar').click(function() {
+                if (contador == 1) {
+                    $('nav').animate({
+                        left: '0'
+                    });
+                    contador = 0;
+                } else {
+                    contador = 1;
+                    $('nav').animate({
+                        left: '-100%'
+                    });
+                }
+            });
+
+            // Mostramos y ocultamos submenus
+            $('.submenu').click(function() {
+                $(this).children('.children').slideToggle();
+            });
+        }
+    </script>
+
+    <header>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu "><span class="fas fa-bars"></span>TravelH.Com</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="tooltip"><span class="fab fa-accusoft"></span>
+                     TravelH.Com
+                     <span class="tooltip-box">!gracias por visitar nuestra pagina web</span>
+                </a></li>
+                <li class="submenu">
+                    <a href="#"><span class="fas fa-angle-down"></span>Categoras<spa></span></a>
+                    <ul class="children">
+                        <li><a href="#" aria-checked="1"><span class="fas fa-procedures"></span>Alojamientos</a></li>
+                        <li><a href="#" aria-checked="2"><span class="fas fa-plane-departure"></span>Vuelos</a></li>
+                        <li><a href="#" aria-checked="3"><span class="fas fa-car"></span>Carro</a></li>
+                        <li><a href="#" aria-checked="4"><span class="fas fa-magic"></span>Actividades</a></li>
+                        <li><a href="#" aria-checked="5"><span class="fas fa-map-signs"></span>Paquetes</a></li>
+                        <li><a href="#" aria-checked="6"><span class="fas fa-flag"></span>Pais</a></li>
+                        <li><a href="#" aria-checked="7"><span class="fas fa-splotch"></span>Ciudad</a></li>
+                        <li><a href="#" aria-checked="8"><span class="fas fa-wrench"></span>Opiniones</a></li>
+                    </ul>
+                </li>
+                <li><a class="tooltip" href="/" aria-checked="9"><span class="fas fa-globe"> Idioma
+                    <span class="tooltip-box">Elegir el idioma de tu pais.</span>
+                </span></a></li>
+                <li><a class="tooltip" href="/" aria-checked="10"><span class="saf-categorias acerca-de-nosotros">   Acerca de nosotros</span>
+                    <span class="tooltip-box  toolpit-we users-information-the-section">Contactar con atención al cliente</span>
+                </a></li>
+                <li><a class="tooltip  toolpit-we users-information-the-section" href="/" aria-checked="11"><span class="fas fa-dollar-sign">
+                    USD
+                 <span class="tooltip-box  toolpit-we users-information-the-section">Elige tu moneda segun tu pais</span>
+                </span></a></li>
+                <li><a class="tooltip" href="/" aria-checked="12"><span class="far fa-user">   Iniciar Sesión
+                    <span class="tooltip-box toolpit-we users-information-the-section">para estar mas informado.
+                        
+                    </span>
+                </span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <script>
+        function App() {}
+
+        window.onload = function(event) {
+            var app = new App();
+            window.app = app;
+        };
+
+        App.prototype.processingButton = function(event) {
+            const btn = event.currentTarget;
+            const slickList = event.currentTarget.parentNode;
+            const track = event.currentTarget.parentNode.querySelector('#track');
+            const slick = track.querySelectorAll('.slick');
+
+            const slickWidth = slick[0].offsetWidth;
+
+            const trackWidth = track.offsetWidth;
+            const listWidth = slickList.offsetWidth;
+
+            track.style.left == "" ? leftPosition = track.style.left = 0 : leftPosition = parseFloat(track.style.left.slice(0, -2) * -1);
+
+            btn.dataset.button == "button-prev" ? prevAction(leftPosition, slickWidth, track) : nextAction(leftPosition, trackWidth, listWidth, slickWidth, track)
+        }
+
+        let prevAction = (leftPosition, slickWidth, track) => {
+            if (leftPosition > 0) {
+                console.log("entro 2")
+                track.style.left = `${-1 * (leftPosition - slickWidth)}px`;
+            }
+        }
+
+        let nextAction = (leftPosition, trackWidth, listWidth, slickWidth, track) => {
+            if (leftPosition < (trackWidth - listWidth)) {
+                track.style.left = `${-1 * (leftPosition + slickWidth)}px`;
+            }
+        }
+    </script>
+
+    <section class="hoteles">
+        <p>Buscar por tipo de Alojamientos</p>
+        <h2>Escoje tu lugar favorito</h2>
+
+        <br>
+        <div class="Carousel">
+
+
+            <div class="slick-list" id="slick-list">
+                <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                </button>
+                <div class="slick-track" id="track">
+                    <div class="slick">
+                        <div>
+
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/hotel.jpg" alt="Image">
+                                    <h4><small>Hoteles</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/chalets.jpg" alt="Image">
+                                    <h4>
+                                        <small>Chalets de montaña</small>
+                                    </h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/villas.jpg" alt="Image">
+                                    <h4>
+                                        <small>Villas</small>
+                                    </h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/resorts.jpg" alt="Image">
+                                    <h4>
+                                        <small>Resorts</small>
+                                    </h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/moteles.jpg" alt="Moteles">
+                                    <h4><small>Moteles</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/glaping.jpg" alt="glamping">
+                                    <h4><small>Glamping</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/casaschalet.jpg" alt="Casasy chalet">
+                                    <h4><small>Casasy chalet</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/cabañas.jpg" alt="Cabañas">
+                                    <h4><small>Cabañas</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/barcos.jpg" alt="Barcos">
+                                    <h4><small>Barcos</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/apartamento.jpg" alt="Image">
+                                    <h4><small>Apartamentos</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/apartahotel.jpg" alt="Apartahoteles">
+                                    <h4><small>Apartahoteles</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/rands.jpg" alt="Image">
+                                    <h4><small>Riands</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/minicasas.jpg" alt="Image">
+                                    <h4><small>Minicasas</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/rio.jpg" alt="Image">
+                                    <h4><small>Ryokans</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <h4><small id="mas" style="color: white;">Buscar más</small></h4>
+                                    <img src="./img/categorias.jpg" alt="glamping">
+
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                </button>
+            </div>
+        </div>
+        <p>Visita Estados Unidos</p>
+        <h2>Los mejores paquetes</h2>
+        <!--ciudaes de estados unidos-->
+
+        <div class="Carousel">
+
+            <div class="slick-list" id="slick-list">
+                <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                </button>
+                <div class="slick-track" id="track">
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/nuevayork.jpg" alt="Image">
+                                    <h4><small>Nueva York</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/losangeles.jpg" alt="Image">
+                                    <h4>
+                                        <small>Los Angeles</small>
+                                    </h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/miami.jpg" alt="Image">
+                                    <h4>
+                                        <small>Miami</small>
+                                    </h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/atlanta.jpg" alt="Image">
+                                    <h4>
+                                        <small>Atlanta</small>
+                                    </h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/las vegas.jpg" alt="Image">
+                                    <h4>
+                                        <small>Las vegas</small>
+                                    </h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/orlando.jpg" alt="Moteles">
+                                    <h4><small>Orlando</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/sanfrancisco.jpg" alt="glamping">
+                                    <h4><small>San Francisco</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <h4><small id="mas" style="color: white;">Buscar más</small></h4>
+                                    <img src="./img/estados.jpg" alt="glamping">
+
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                </button>
+            </div>
+        </div>
+        <p>Paquetes vacacionales</p>
+        <h2>reservando los vuelos</h2>
+        <!--ciudaes de estados unidos-->
+        <div class="Carousel">
+
+            <div class="slick-list" id="slick-list">
+                <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                </button>
+                <div class="slick-track" id="track">
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/tokio.jpg " alt="Image ">
+                                    <h4><small>Tokio</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+
+                                    <img src="./img/roma.jpg " alt="Image ">
+                                    <h4><small>Roma</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/berlin.jpg " alt="Image ">
+                                    <h4>
+                                        <small>Berlin</small>
+                                    </h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/paris.jpg " alt="Image ">
+                                    <h4>
+                                        <small>Paris</small>
+                                    </h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/dubai.jpg " alt="Image ">
+                                    <h4>
+                                        <small>Dubai</small>
+                                    </h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/riodejaneiro.jpg " alt="glamping ">
+                                    <h4><small>Río de janeiro</small></h4>
+
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/shangai.jpg " alt="glamping ">
+                                    <h4><small>Shangai</small></h4>
+
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <h4><small id="mas" style="color: white;">Buscar más</small></h4>
+                                    <img src="./img/pendiente1.jpg" alt="glamping">
+
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                </button>
+            </div>
+        </div>
+        <p>Busca tu próximo viaje</p>
+        <h2>Explora lo mejor de la naturaleza</h2>
+        <!--ciudaes de estados unidos-->
+
+        <div class="Carousel">
+
+            <div class="slick-list" id="slick-list">
+                <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                </button>
+                <div class="slick-track" id="track">
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/yeloston.jpg" alt="Image">
+                                    <h4><small>yellowstone</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/galapagos.jpg" alt="Image">
+                                    <h4>
+                                        <small>Islas Galapagos</small>
+                                    </h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/quindio.jpg" alt="Image">
+                                    <h4>
+                                        <small>Quindio</small>
+                                    </h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/hawais.jpg" alt="Image">
+                                    <h4>
+                                        <small>Hawai</small>
+                                    </h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/amazonas.jpg" alt="Image">
+                                    <h4>
+                                        <small>Amazonas</small>
+                                    </h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <img src="./img/kalahari.jpg" alt="Kalahari">
+                                    <h4><small>Kalahari</small></h4>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="/">
+
+                                <picture>
+                                    <h4><small id="mas" style="color: white;">Buscar más</small></h4>
+                                    <img src="./img/pendiente.jpg" alt="glamping">
+
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                </button>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div class="bors">
+        <h5 class="mas">Más destinos para ti</h5>
+
+    </div>
+    <div class="categorias">
+        <div class="lbl-menu">
+            <label for="radio1">Regiones</label>
+            <label for="radio2">ciudades</label>
+            <label for="radio3">Lugares para ti</label>
+
+        </div>
+
+        <div class="content">
+
+            <input type="radio" name="radio" id="radio1" checked>
+            <div class="tab1">
+                <contador>
+                    <ul>
+
+                        <li><a href="">Las marcas</a></li>
+                        <li><a href="">Tohoku</a></li>
+                        <li><a href="">Maine</a></li>
+                        <li><a href="" style="right: 150px;">Lor howe</a></li>
+
+                    </ul>
+                    <ul>
+
+                        <li><a href="">Apulia</a></li>
+                        <li><a href="">Basilicata</a></li>
+                        <li><a href="">Calabria</a></li>
+                        <li><a href="">Campania</a></li>
+
+                    </ul>
+                    <ul>
+
+                        <li><a href="">Amiens</a></li>
+                        <li><a href="">Bretaña</a></li>
+                        <li><a href="">Loira</a></li>
+                        <li><a href="">Córcega</a></li>
+
+                    </ul>
+                    <ul>
+
+                        <li><a href="">Gran este</a></li>
+                        <li><a href="">Normandia</a></li>
+                        <li><a href="">Aquitania</a></li>
+                        <li><a href="">Occitania</a></li>
+
+                    </ul>
+                    <ul>
+
+                        <li><a href="">Castilla</a></li>
+                        <li><a href="">Andalucia</a></li>
+                        <li><a href="">Cataluña</a></li>
+                        <li><a href="">Galicia</a></li>
+
+                    </ul>
+
+
+
+
+
+
+
+                </contador>
+            </div>
+
+            <input type="radio" name="radio" id="radio2">
+            <div class="tab2">
+
+                <contador>
+                    <ul>
+
+                        <li><a href="">Los angeles</a></li>
+                        <li><a href="">Nueva york</a></li>
+                        <li><a href="">Medellín</a></li>
+                        <li><a href="">Berlín</a></li>
+
+                    </ul>
+                    <ul>
+
+                        <li><a href="">Paris</a></li>
+                        <li><a href="">Luxemburgo</a></li>
+                        <li><a href="">Dubai</a></li>
+                        <li><a href="">Chicago</a></li>
+
+                    </ul>
+                    <ul>
+
+                        <li><a href="">Barcelona</a></li>
+                        <li><a href="">Oslo</a></li>
+                        <li><a href="">Ottawa</a></li>
+                        <li><a href="">Seul</a></li>
+
+                    </ul>
+                    <ul>
+
+                        <li><a href="">Tokio</a></li>
+                        <li><a href="">Salvador</a></li>
+                        <li><a href="">Brasilia</a></li>
+                        <li><a href="">Sao paulo</a></li>
+
+                    </ul>
+                    <ul>
+
+                        <li><a href="">Roma</a></li>
+                        <li><a href="">Londres</a></li>
+                        <li><a href="">Praga</a></li>
+                        <li><a href="">Más</a></li>
+
+                    </ul>
+
+
+                </contador>
+
+
+            </div>
+
+            <input type="radio" name="radio" id="radio3">
+            <div class="tab3">
+                <h2>Blog</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores
+                    illo nulla nisi iure eum, aperiam facilis in.</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="redes content-veryfique-redes-sociales-content">
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="http://www.twitter.com/falconmasters" target="_blank" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://www.facebook.com/juandaniel.ospinaortiz" target="_blank" class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://www.instagram.com/juandanielospinaortiz/?hl=es-la" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://www.tiktok.com/@klayn.ospina?is_copy_url=1&is_from_webapp=v1&lang=es" target="_blank" class="tiktok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://discord.com/channels/@me" target="_blank" class="discord">
+                        <i class="fab fa-discord"></i>
+
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <style>
+        .suscribete {
+            background: rgb(1, 26, 110);
+            position: relative;
+            top: -240px;
+            padding: 50px 0px;
+            width: 100%;
+            max-width: 1000%;
+            height: 100%;
+        }
+        
+        .suscribete h1 {
+            color: white;
+            text-align: center;
+            font-size: 35px;
+        }
+        
+        .suscribete h3 {
+            color: #ccc;
+            text-align: center;
+            margin: 4px;
+            font-size: 15px;
+        }
+        
+        .suscribete h4 {
+            color: white;
+            font-size: 15px;
+            position: absolute;
+            left: 340px;
+        }
+        
+        .suscribete .enter {
+            margin-top: 15px;
+            text-align: center;
+            background: none;
+        }
+        
+        .suscribete input {
+            border-radius: 4px;
+            border: none;
+            padding: 10px;
+            margin: 20px;
+            width: 270px;
+        }
+        
+        .suscribete button {
+            color: black;
+            right: 20px;
+            border-radius: 4px;
+            border: none;
+            padding: 10px 5px;
+            cursor: pointer;
+            background: #fff;
+        }
+        
+        .suscribete button:hover {
+            background: rgb(210, 231, 250);
+        }
+        
+        .suscribete .radio {
+            position: absolute;
+            left: 175px;
+            margin-top: 80px;
+            padding: 15px;
+            font-size: 10px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        
+        .suscribete .tol-pi {
+            display: none;
+            color: white;
+            position: absolute;
+            background: rgb(40, 70, 240);
+            padding: 10px 15px;
+            right: 0px;
+            margin: -50px -60px;
+            border-radius: 4px;
+        }
+        
+        .suscribete .tooltip:hover .tol-pi {
+            display: inline-block;
+            transition: all 1.8s ease;
+        }
+    </style>
+
+    <div class="suscribete">
+        <h1>!Ahorra tiempo y dinero¡</h1>
+        <h3>!Suscribete y te enviaremos las mejores ofertas </h3>
+        <div class="enter">
+            <input type="text" placeholder="E.Mail" id="suscripcion" maxlength="200">
+            <button class="tooltip">!Suscribirse
+                <samp class="tol-pi">Mas ofertas para ti</samp>
+
+            </button>
+            <input class="radio" type="radio" name="" id="radio">
+            <h4>¡Envíame un enlace para descargar la app </h4>
+        </div>
+    </div>
+
+    <style>
+        .final {
+            background: rgb(53, 53, 53);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin-top: -250px;
+        }
+        
+        .final h4 {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            margin: 20px;
+        }
+        
+        .final .somos a {
+            color: rgb(255, 255, 255);
+            display: table-header-group;
+            padding: 30px 20px;
+        }
+        
+        .final .somos a:hover {
+            text-decoration: underline;
+        }
+        
+        .final .somos {
+            width: 30%;
+            margin: 20px;
+        }
+        /*seconds*/
+        
+        .final h4 {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            margin: 20px;
+        }
+        
+        .final .toxe {
+            background: transparent;
+            width: 40%;
+            position: absolute;
+            height: 30%;
+            margin-left: 280px;
+            margin-top: -194px;
+        }
+        
+        .final .somoss a {
+            color: rgb(255, 255, 255);
+            display: table-header-group;
+            padding: 30px 20px;
+        }
+        
+        .final .somoss a:hover {
+            text-decoration: underline;
+        }
+        
+        .final .somoss {
+            width: 50%;
+            margin: 20px;
+            display: block;
+        }
+        
+        .final .toxes {
+            background: transparent;
+            width: 40%;
+            position: absolute;
+            height: 30%;
+            margin-left: 530px;
+            margin-top: -194px;
+        }
+        
+        .final .quienes h5 {
+            color: white;
+            left: 210px;
+            position: absolute;
+            top: 370px;
+        }
+        
+        .final .travel {
+            color: rgb(112, 112, 112);
+            text-align: center;
+            font-size: 30px;
+            margin: 50px;
+            font-family: 'Copse', serif;
+        }
+    </style>
+    <div class="final">
+        <div class="tox">
+            <h4 title="quienes somos">Quienes somos</h4>
+            <div class="somos">
+                <a href="">Tasas de aerolíneas</a>
+                <a href="">Aerolíneas</a>
+                <a href="">Tips de tarifas bajas</a>
+                <a href="">Configuración de seguridad</a>
+                <a href="">Sea nuestro socio</a>
+                <a href="">App</a>
+
+            </div>
+
+        </div>
+        <div class="toxe">
+            <h4 title="contactar">Contactar</h4>
+            <div class="somoss">
+                <a href=""> Ayuda/Preguntas frecuentes</a>
+                <a href="">Prensa</a>
+                <a href="">Compañias afiliadas</a>
+                <a href="">Blog</a>
+                <a href="">Movil</a>
+                <a href="">Empleo</a>
+
+            </div>
+
+        </div>
+        <div class="toxes">
+            <h4 title="mas">Mas</h4>
+            <div class="somoss">
+                <a href="">destinos principales</a>
+                <a href="">Que te gusto</a>
+                <a href="">TravelH.Com</a>
+                <a href="">En que te podemos ayudar</a>
+                <a href="">Guias de viaje</a>
+                <a href="">Indice</a>
+
+            </div>
+
+        </div>
+        <hr>
+        <div class="tox">
+            <h4 title="quienes somos">Búscar</h4>
+            <div class="somos">
+                <a href="">Paises</a>
+                <a href="">Regiones</a>
+                <a href="">Ciudades</a>
+                <a href="">Zonas</a>
+                <a href="">Hoteles</a>
+                <a href="">Lugares de interes</a>
+
+            </div>
+
+        </div>
+        <div class="quienes">
+            <h5>TravelH.Com forma parte de TravelH Holdings Inc., líder mundial en viajes online y servicios relacionados.
+
+            </h5>
+        </div>
+
+        <hr>
+        <div class="travel">
+            <h1>TravelH.Com</h1>
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>
